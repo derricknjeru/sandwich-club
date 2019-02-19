@@ -46,7 +46,6 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         int position = intent.getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
-        Log.d(LOG_TAG, "@position::" + position);
 
         if (position == DEFAULT_POSITION) {
             // EXTRA_POSITION not found in intent
@@ -57,7 +56,6 @@ public class DetailActivity extends AppCompatActivity {
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_details);
         String json = sandwiches[position];
 
-        Log.d(LOG_TAG, "@json::" + json);
 
         Sandwich sandwich = null;
         try {
